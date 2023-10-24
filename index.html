@@ -37,6 +37,12 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#my-extra">Extra</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -216,6 +222,41 @@
     </section>
     <!-- Akhir Gallery -->
 
+    <!-- Extra -->
+    <section id="my-extra">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Extra</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="extra-velg bg-warning-subtle">
+              <h4 class="nama-velg">Velg ONE</h4>
+              <img src="img/velg/velg1.png" alt="Velg 1" class="gambar-velg" />
+              <a href="#" class="btn btn-primary button-velg">Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="extra-velg bg-warning-subtle">
+              <h4 class="nama-velg">Velg TWO</h4>
+              <img src="img/velg/velg1.png" alt="Velg 2" class="gambar-velg" />
+              <a href="#" class="btn btn-primary button-velg">Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="extra-velg bg-warning-subtle">
+              <h4 class="nama-velg">Velg THREE</h4>
+              <img src="img/velg/velg1.png" alt="Velg 3" class="gambar-velg" />
+              <a href="#" class="btn btn-primary button-velg">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Extra -->
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -318,6 +359,16 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      // Jika ingin semua class .extra-velg animasinya menjadi tilt.js, tambahkan All dibelakang querySelector.
+      VanillaTilt.init(document.querySelector(".extra-velg"), {
+        max: 25,
+        speed: 1000,
+        glare: true,
       });
     </script>
   </body>
